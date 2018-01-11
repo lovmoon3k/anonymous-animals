@@ -5,8 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Anonymous Animals</title>
+    <link href="library/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1>hello</h1>
+    <div class="container">
+        <h2>Anonymous Animals Example</h2>
+        <p>
+            Trung Quân: 
+            <a href="https://cv.trungquandev.com/" target="_blank">https://cv.trungquandev.com/</a>
+        </p>                                                                                      
+        <div class="table-responsive">          
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+      </div>
+
+    <script src="library/jquery/dist/jquery.min.js"></script>
+    <script src="library/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="js/handle.js"></script>
 </body>
 </html>

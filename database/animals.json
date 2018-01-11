@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "name": "Mèo ta"
+    }, {
+        "id": 2,
+        "name": "Hải cẩu"
+    }, {
+        "id": 3,
+        "name": "Gấu Bắc Cực"
+    }, {
+        "id": 4,
+        "name": "Ếch xanh"
+    }, {
+        "id": 5,
+        "name": "Chó đốm"
+    }, {
+        "id": 6,
+        "name": "Sư tử"
+    }, {
+        "id": 7,
+        "name": "Báo đốm"
+    }, {
+        "id": 8,
+        "name": "Khỉ"
+    }, {
+        "id": 9,
+        "name": "Voọc"
+    }, {
+        "id": 10,
+        "name": "Chích chòe"
+    }, {
+        "id": 11,
+        "name": "Gấu trúc"
+    }, {
+        "id": 12,
+        "name": "Sói tuyết"
+    }, {
+        "id": 13,
+        "name": "Sói xám"
+    }, {
+        "id": 14,
+        "name": "Thỏ trắng"
+    }, {
+        "id": 15,
+        "name": "Chim cánh cụt"
+    }, {
+        "id": 16,
+        "name": "Cừu"
+    }, {
+        "id": 17,
+        "name": "Cá heo"
+    }
+]
