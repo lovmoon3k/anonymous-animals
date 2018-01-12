@@ -1,5 +1,5 @@
 # anonymous-animals
-Nodejs anonymous animals like google
+Nodejs & Socket.io: Build anonymous animals app like google.
 
 Author: Trung Quân
 
