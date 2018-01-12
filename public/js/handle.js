@@ -1,4 +1,5 @@
-var socket = io("http://localhost:3000");
+// var socket = io("http://localhost:3000");
+var socket = io("https://anonymous-animal-trungquandev.herokuapp.com");
 
 socket.on('animal-online', (data) => {
     var animal = '<a id="online-' + data.animalId + '" class="list-group-item" style="color: white; background-color: ' + data.animalColor + ';">' + data.animalName + ' ẩn danh.</a>';
