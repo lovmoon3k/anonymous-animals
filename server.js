@@ -9,7 +9,8 @@ app.set('views', './views');
 var routes = require('./routes/web');
 app.use('/', routes);
 
-var io = require('./socket/returnAnimals').listen(server);
+var DB_Animals = require('./model/database');
+var io = require('./socket/returnAnimals').listen(server, DB_Animals);
 
 const port = process.env.PORT || 3000;
 server.listen(port, () => {

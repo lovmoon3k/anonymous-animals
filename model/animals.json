@@ -1,54 +1,71 @@
 [
     {
         "id": 1,
-        "name": "Mèo ta"
+        "name": "Mèo ta",
+        "color": "#1abc9c"
     }, {
         "id": 2,
-        "name": "Hải cẩu"
+        "name": "Hải cẩu",
+        "color": "#2ecc71"
     }, {
         "id": 3,
-        "name": "Gấu Bắc Cực"
+        "name": "Gấu Bắc Cực",
+        "color": "#3498db"
     }, {
         "id": 4,
-        "name": "Ếch xanh"
+        "name": "Ếch xanh",
+        "color": "#8e44ad"
     }, {
         "id": 5,
-        "name": "Chó đốm"
+        "name": "Chó đốm",
+        "color": "#2c3e50"
     }, {
         "id": 6,
-        "name": "Sư tử"
+        "name": "Sư tử",
+        "color": "#f1c40f"
     }, {
         "id": 7,
-        "name": "Báo đốm"
+        "name": "Báo đốm",
+        "color": "#e67e22"
     }, {
         "id": 8,
-        "name": "Khỉ"
+        "name": "Khỉ",
+        "color": "#e74c3c"
     }, {
         "id": 9,
-        "name": "Voọc"
+        "name": "Voọc",
+        "color": "#95a5a6"
     }, {
         "id": 10,
-        "name": "Chích chòe"
+        "name": "Chích chòe",
+        "color": "#d35400"
     }, {
         "id": 11,
-        "name": "Gấu trúc"
+        "name": "Gấu trúc",
+        "color": "#f39c12"
     }, {
         "id": 12,
-        "name": "Sói tuyết"
+        "name": "Sói tuyết",
+        "color": "#16a085"
     }, {
         "id": 13,
-        "name": "Sói xám"
+        "name": "Sói xám",
+        "color": "#34495e"
     }, {
         "id": 14,
-        "name": "Thỏ trắng"
+        "name": "Thỏ trắng",
+        "color": "#27ae60"
     }, {
         "id": 15,
-        "name": "Chim cánh cụt"
+        "name": "Chim cánh cụt",
+        "color": "#9b59b6"
     }, {
         "id": 16,
-        "name": "Cừu"
+        "name": "Cừu",
+        "color": "#674172"
     }, {
         "id": 17,
-        "name": "Cá heo"
+        "name": "Cá heo",
+        "color": "#F5D76E"
     }
 ]

@@ -5,40 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Anonymous Animals</title>
+    <link rel="shortcut icon" href="images/favicon-trungquandev.png" />
     <link href="library/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <style>
+        .td-animal {
+            position: relative;
+            display: inline-block;
+        }
+        .td-animal .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+        }
+        .td-animal:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h2>Anonymous Animals Example</h2>
+        <h2 style="text-align: center;">Anonymous Animals Example</h2>
         <p>
-            Trung Quân: 
+            <span style="font-weight:bold;">Trung Quân:</span> 
             <a href="https://cv.trungquandev.com/" target="_blank">https://cv.trungquandev.com/</a>
         </p>                                                                                      
         <div class="table-responsive">          
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Firstname</th>
-                    <th>Lastname</th>
-                    <th>Age</th>
-                    <th>City</th>
-                    <th>Country</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Anna</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                    <td>New York</td>
-                    <td>USA</td>
-                </tr>
-            </tbody>
-        </table>
+            <table class="table" id="animals-table">
+                <tbody>
+                </tbody>
+            </table>
         </div>
-      </div>
+        <p style="font-weight:bold;">Animals Online:</p>
+        <div class="list-group" id="alimals-online"></div>
+    </div>
 
     <script src="library/jquery/dist/jquery.min.js"></script>
     <script src="library/bootstrap/dist/js/bootstrap.min.js"></script>
