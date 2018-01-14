@@ -13,14 +13,14 @@ socket.on('animal-online', (data) => {
 });
 
 /**
- * Listen to an event from server when an animal offline
+ * Listen to an event from SERVER when an animal offline
  */
 socket.on('animal-offline', (animalId) => {
     $('#online-' + animalId).remove();
 });
 
 /**
- * Listen to an event from server when an animal check 
+ * Listen to an event from SERVER when an animal clicks the input box
  */
 socket.on('server-send-check', (data) => {
     $('#' + data.inputId).css('border-color', data.animalColor);
@@ -28,6 +28,9 @@ socket.on('server-send-check', (data) => {
     $('#td-' + data.inputId).append(tooltip);
 });
 
+/**
+ * Listen to an event from SERVER when an animal leaves the input box
+ */
 socket.on('server-send-uncheck', (inputId) => {
     $('#' + inputId).css('border-color', '');
     $('#td-' + inputId + '>span').remove();
@@ -35,7 +38,7 @@ socket.on('server-send-uncheck', (inputId) => {
 
 $(document).ready(() => {
     /**
-     * Thêm một table có 6 hàng + 6 cột
+     * Add a table has 6 cols and 6 rows
      */
     for (var i = 0; i < 6; i++) {
         var data = "<tr>";
@@ -46,17 +49,29 @@ $(document).ready(() => {
         $('#animals-table>tbody').append(data);
     }
 
+    /**
+     * Initialize a variable inputCheckedId
+     */
     var inputCheckedId;
 
+    /**
+     * Send Event when an animal clicks the input box
+     */
     $('.animal').bind('click', function () {
         socket.emit('animal-check', this.id);
         inputCheckedId = this.id;
     });
     
+    /**
+     * Send Event when an animal leaves the input box
+     */
     $('.animal').bind('blur', function () {
         socket.emit('animal-uncheck', this.id);
     });
 
+    /**
+     * Send Event when an animal leaves the site or f5 page.
+     */
     $(window).bind('beforeunload', function () {
         socket.emit('animal-uncheck', inputCheckedId);
     });
