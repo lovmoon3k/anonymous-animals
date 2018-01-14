@@ -1,15 +1,27 @@
-// var socket = io("http://localhost:3000");
-var socket = io("https://anonymous-animal-trungquandev.herokuapp.com");
+/**
+ * initialize socket module
+ */
+var socket = io("http://localhost:3000");
+// var socket = io("https://anonymous-animal-trungquandev.herokuapp.com");
 
+/**
+ * Listen to an event from server when an animal online
+ */
 socket.on('animal-online', (data) => {
     var animal = '<a id="online-' + data.animalId + '" class="list-group-item" style="color: white; background-color: ' + data.animalColor + ';">' + data.animalName + ' ẩn danh.</a>';
     $('#alimals-online').prepend(animal);
 });
 
+/**
+ * Listen to an event from server when an animal offline
+ */
 socket.on('animal-offline', (animalId) => {
     $('#online-' + animalId).remove();
 });
 
+/**
+ * Listen to an event from server when an animal check 
+ */
 socket.on('server-send-check', (data) => {
     $('#' + data.inputId).css('border-color', data.animalColor);
     var tooltip = '<span class="tooltiptext" style="color: white; background-color: ' + data.animalColor + ';">' + data.animalName + ' ẩn danh</span>';
