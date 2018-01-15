@@ -38,7 +38,7 @@ socket.on('server-send-uncheck', (inputId) => {
 
 $(document).ready(() => {
     /**
-     * Add a table has 6 cols and 6 rows
+     * Add a table has 6 columls and 6 rows
      */
     for (var i = 0; i < 6; i++) {
         var data = "<tr>";
